@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #efe7db
+}
+
+h1,
+p {
+    font-family: "Inter", sans-serif;
+}
+
+.card_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 32px;
+    background: linear-gradient(to bottom, #ff7574, #ffc55a);
+
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+
+
+}
+
+.card_content_front {
+    display: flex;
+    padding: 3em;
+}
+
+.card {
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.8s;
+}
+
+
+.profile-pic {
+    justify-content: center;
+    width: 128px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.text_content {
+    padding: 1em;
+    width: 300px;
+}
